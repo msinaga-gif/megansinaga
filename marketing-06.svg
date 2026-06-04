@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <rect width="400" height="500" fill="#4a0d18"/>
+  <rect x="40" y="80" width="320" height="240" fill="#faf9f7" opacity="0.08"/>
+  <text x="200" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#faf9f7" opacity="0.55">Your post image</text>
+  <rect x="40" y="360" width="180" height="10" rx="2" fill="#faf9f7" opacity="0.35"/>
+</svg>

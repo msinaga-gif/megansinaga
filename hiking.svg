@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" fill="#e8ddd8"/>
+  <circle cx="120" cy="94" r="39" fill="#6e1524"/>
+  <path d="M54 202c20-72 112-72 132 0" fill="#6e1524"/>
+  <text x="120" y="228" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6e1524" opacity="0.4">Your photo</text>
+</svg>
