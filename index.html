@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Megan Sinaga, Marketing, Finance, and Consulting.">
+  <title>Megan Sinaga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="curtain" id="curtain" aria-hidden="true">
+    <div class="curtain__panel curtain__panel--left"></div>
+    <div class="curtain__panel curtain__panel--right"></div>
+    <span class="curtain__mark">
+      <img src="assets/logo.png" alt="" width="447" height="559" decoding="async">
+    </span>
+  </div>
+
+  <header class="site-nav" id="site-nav">
+    <a class="site-nav__logo" href="#landing" aria-label="Megan Sinaga home">
+      <img src="assets/logo.png" alt="" width="447" height="559" decoding="async">
+    </a>
+    <nav class="site-nav__links" aria-label="Primary">
+      <a class="site-nav__link" href="#about">About</a>
+      <a class="site-nav__link" href="#work">Work</a>
+      <a class="site-nav__link" href="#interests">Interests</a>
+      <a class="site-nav__link" href="#contact">Contact</a>
+      <a class="site-nav__link site-nav__link--muted" href="#landing">Home</a>
+    </nav>
+  </header>
+
+  <section class="landing" id="landing" aria-label="Introduction">
+    <div class="landing__grain" aria-hidden="true"></div>
+
+    <div class="landing__orb landing__orb--1" aria-hidden="true"></div>
+    <div class="landing__orb landing__orb--2" aria-hidden="true"></div>
+
+    <p class="landing__ghost" aria-hidden="true">SINAGA</p>
+
+    <div class="landing__main">
+      <div class="landing__copy">
+        <h1 class="landing__title">
+          <span class="landing__line">
+            <span class="landing__word reveal reveal--1">Megan</span>
+          </span>
+          <span class="landing__line">
+            <span class="landing__word landing__word--accent reveal reveal--2">Sinaga</span>
+          </span>
+        </h1>
+      </div>
+
+      <div class="landing__visual reveal reveal--3">
+        <div class="landing__ring" aria-hidden="true"></div>
+        <div class="landing__portrait">
+          <img src="assets/profile.png" alt="Portrait of Megan Sinaga" width="497" height="746">
+        </div>
+      </div>
+    </div>
+
+    <aside class="ticker reveal reveal--4" id="ticker" aria-label="Areas of focus">
+      <div class="ticker__preview" id="ticker-preview">
+        <span class="ticker__preview-label">Focus</span>
+        <p class="ticker__preview-text" id="ticker-preview-text">Drag, hover, or click a topic</p>
+      </div>
+      <div class="ticker__bar" id="ticker-bar">
+        <div class="ticker__edge ticker__edge--left" aria-hidden="true"></div>
+        <div class="ticker__edge ticker__edge--right" aria-hidden="true"></div>
+        <div class="ticker__viewport" id="ticker-viewport">
+          <div class="ticker__track" id="ticker-track" aria-live="off"></div>
+        </div>
+      </div>
+    </aside>
+
+    <a class="landing__scroll reveal reveal--5" href="#about" aria-label="Scroll to about section">
+      <span>Scroll</span>
+      <span class="landing__scroll-line"></span>
+    </a>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about__grain" aria-hidden="true"></div>
+    <div class="about__orb" aria-hidden="true"></div>
+
+    <div class="about__wrap">
+      <header class="about__header in-view">
+        <p class="about__eyebrow">01 · About</p>
+        <h2 class="about__title" id="about-heading">Who I am.</h2>
+      </header>
+
+      <div class="about__grid">
+        <div class="about__copy">
+          <!-- EDIT: Replace with your bio -->
+          <p class="about__lead in-view">
+            I'm a strategist working across <button type="button" class="about__highlight" data-tip="Brand positioning, campaigns, and growth storytelling.">marketing</button>,
+            <button type="button" class="about__highlight" data-tip="Models, forecasting, and investment-ready analysis.">finance</button>, and
+            <button type="button" class="about__highlight" data-tip="Hands-on advisory for teams navigating complexity.">consulting</button>, helping teams turn ambiguity into clear next steps.
+          </p>
+          <p class="about__text in-view">
+            <!-- EDIT: Second paragraph -->
+            Based in Fresno and studying at UC Irvine, I'm building experience across consulting contracts and finance internships, translating data into recommendations teams can act on.
+          </p>
+        </div>
+
+        <div class="about__aside" id="about-cards">
+          <div class="about__cards">
+            <article class="about-card in-view" data-tilt>
+              <span class="about-card__label">Location</span>
+              <span class="about-card__value">Fresno, CA</span>
+            </article>
+            <article class="about-card in-view" data-tilt>
+              <span class="about-card__label">Education</span>
+              <span class="about-card__value">UC Irvine</span>
+            </article>
+          </div>
+          <div class="about__school in-view">
+            <img class="about__school-logo" src="assets/uci-logo.png" alt="University of California, Irvine" width="800" height="798" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="about__notes in-view" id="about-tabs">
+        <nav class="about__note-nav" role="tablist" aria-label="About details">
+          <button type="button" class="about-tab is-active" role="tab" aria-selected="true" aria-controls="panel-story" id="tab-story-btn" data-tab="story">My story</button>
+          <button type="button" class="about-tab" role="tab" aria-selected="false" aria-controls="panel-approach" id="tab-approach-btn" data-tab="approach">Approach</button>
+          <button type="button" class="about-tab" role="tab" aria-selected="false" aria-controls="panel-now" id="tab-now-btn" data-tab="now">Right now</button>
+        </nav>
+        <div class="about__note-sheet">
+          <div class="about__panels">
+            <div class="about-panel is-active" role="tabpanel" id="panel-story" aria-labelledby="tab-story-btn">
+              <p>Moving throughout California, I have grown passionate in tying my interests in consumer goods to my studies. Therefore, I have always been drawn to work that sits at the intersection of analysis and execution. Hosting fashion shows at my hometown, I am able to understand structures behind customer behavior, financial modeling, and market research.</p>
+            </div>
+            <div class="about-panel" role="tabpanel" id="panel-approach" aria-labelledby="tab-approach-btn" hidden>
+              <p>Listen first, model second, recommend third. I build alignment before slides, then deliver frameworks teams can run with after I leave the room.</p>
+            </div>
+            <div class="about-panel" role="tabpanel" id="panel-now" aria-labelledby="tab-now-btn" hidden>
+              <p>Currently interning in search funds and real estate private equity while finishing projects in consulting. Open to roles in strategy, finance, and marketing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="about__tip in-view" id="about-tip" role="status" aria-live="polite">Hover the highlighted words to learn more.</p>
+    </div>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="work-heading">
+    <div class="work__grain" aria-hidden="true"></div>
+
+    <div class="work__wrap">
+      <header class="work__header in-view">
+        <p class="work__eyebrow">02 · Work</p>
+        <h2 class="work__title" id="work-heading">What I've built.</h2>
+      </header>
+
+      <div class="work__controls in-view" id="work-controls">
+        <div class="work__controls-row">
+          <div class="work__controls-copy">
+            <div class="work__filter" role="tablist" aria-label="Work categories">
+              <div class="work__filter-track" id="work-filter-track" aria-hidden="true"></div>
+              <button type="button" class="work-filter is-active" role="tab" aria-selected="true" data-work="marketing" id="work-tab-marketing">Marketing</button>
+              <button type="button" class="work-filter" role="tab" aria-selected="false" data-work="consulting" id="work-tab-consulting">Consulting</button>
+              <button type="button" class="work-filter" role="tab" aria-selected="false" data-work="finance" id="work-tab-finance">Finance</button>
+            </div>
+            <p class="work__filter-hint" id="work-filter-hint">Visual social campaigns. Scroll the gallery, click to expand.</p>
+          </div>
+
+          <div class="work__clients-bubbles" id="work-clients-bubbles">
+            <aside class="work-clients-bubble in-view is-visible" id="work-marketing-bubble" data-work-bubble="marketing" aria-label="Marketing clients">
+              <span class="work-clients-bubble__pulse" aria-hidden="true"></span>
+              <p class="work-clients-bubble__eyebrow">Worked with</p>
+              <div class="work-clients-bubble__ring" id="work-marketing-bubble-ring">
+                <button type="button" class="work-client" style="--i: 0" data-name="Ditto @ UCI" aria-label="Ditto at UCI">
+                  <img src="assets/work/logos/ditto.png" alt="" width="64" height="64" loading="lazy">
+                </button>
+                <button type="button" class="work-client" style="--i: 1" data-name="UCI Tennis Club" aria-label="UCI Tennis Club">
+                  <img src="assets/work/logos/tennis-club.png" alt="" width="64" height="64" loading="lazy">
+                </button>
+                <button type="button" class="work-client" style="--i: 2" data-name="Irvine Consulting Group" aria-label="Irvine Consulting Group">
+                  <img src="assets/work/logos/irvine-consulting.png" alt="" width="64" height="64" loading="lazy">
+                </button>
+                <button type="button" class="work-client" style="--i: 3" data-name="Blufin Sushi" aria-label="Blufin Sushi">
+                  <img src="assets/work/logos/blufin.png" alt="" width="64" height="64" loading="lazy">
+                </button>
+              </div>
+              <p class="work-clients-bubble__name" id="work-marketing-client-label" aria-live="polite">Hover a logo</p>
+            </aside>
+
+            <aside class="work-clients-bubble work-clients-bubble--duo in-view" id="work-consulting-bubble" data-work-bubble="consulting" aria-label="Consulting clients" hidden>
+              <span class="work-clients-bubble__pulse" aria-hidden="true"></span>
+              <p class="work-clients-bubble__eyebrow">Worked with</p>
+              <div class="work-clients-bubble__ring" id="work-consulting-bubble-ring">
+                <button type="button" class="work-client" style="--i: 0" data-name="Del Taco" aria-label="Del Taco">
+                  <img src="assets/work/logos/del-taco.png" alt="" width="64" height="64" loading="lazy">
+                </button>
+                <button type="button" class="work-client" style="--i: 1" data-name="Ditto AI" aria-label="Ditto AI">
+                  <img src="assets/work/logos/ditto.png" alt="" width="64" height="64" loading="lazy">
+                </button>
+              </div>
+              <p class="work-clients-bubble__name" id="work-consulting-client-label" aria-live="polite">Hover a logo</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div class="work__stage" id="work-stage">
+        <div class="work-panel work-panel--marketing is-active" role="tabpanel" id="work-marketing" aria-labelledby="work-tab-marketing">
+          <p class="work-panel__lead in-view">Short-form video and social graphics for Ditto, UCI Tennis Club, Irvine Consulting Group, and Blufin Sushi, from campus campaigns, team spotlights, and event promos.</p>
+          <div class="work-gallery" id="work-gallery">
+            <figure class="work-post in-view" data-caption="Ditto: “He’s a ten but…” street interview · 29.5K views">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-01.png" aria-label="View post: He's a ten but street interview">
+                <img src="assets/work/marketing-01.png" alt="Ditto street interview reel on campus" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="UCI Anteatery campus reel · 115K views">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-02.png" aria-label="View post: Anteatery campus reel">
+                <img src="assets/work/marketing-02.png" alt="Viral UCI Anteatery social post" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Ditto lifestyle reel · 114K views">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-03.png" aria-label="View post: Super random lifestyle reel">
+                <img src="assets/work/marketing-03.png" alt="Ditto lifestyle reel with laptop on plaza" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Find your anteater match, Krispy Kreme sign-up event">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-04.png" aria-label="View post: Find your anteater match event graphic">
+                <img src="assets/work/marketing-04.png" alt="Ditto find your anteater match event flyer" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Free matcha sign-up at Anteatery activation">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-05.png" aria-label="View post: Free matcha promotion">
+                <img src="assets/work/marketing-05.png" alt="Ditto free matcha campus promotion graphic" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Tennis meme reel, defending your partner · 112K views">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-06.png" aria-label="View post: Tennis meme reel">
+                <img src="assets/work/marketing-06.png" alt="Humorous tennis court social reel" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="UCI Tennis Confessions, club team reel · 28.4K views">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-07.png" aria-label="View post: UCI Tennis Confessions">
+                <img src="assets/work/marketing-07.png" alt="UCI Club Tennis group photo reel" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Happy Women’s History Month, team spotlight">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-08.png" aria-label="View post: Women's History Month">
+                <img src="assets/work/marketing-08.png" alt="Women's History Month marketing graphic with team on stairs" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Meet our Associate Consultants, Winter ’26 cohort">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-09.png" aria-label="View post: Associate Consultants cohort">
+                <img src="assets/work/marketing-09.png" alt="Winter 26 cohort associate consultants promotional graphic" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Blufin Sushi, birthday celebration at the restaurant">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-10.png" aria-label="View post: Blufin Sushi birthday">
+                <img src="assets/work/marketing-10.png" alt="Family celebrating a birthday at Blufin Sushi" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+            <figure class="work-post in-view" data-caption="Blufin Sushi, katsu and grilled chicken donburi">
+              <button type="button" class="work-post__open" data-full="assets/work/marketing-11.png" aria-label="View post: Blufin Sushi menu">
+                <img src="assets/work/marketing-11.png" alt="Blufin Sushi donburi bowls with katsu and grilled chicken" width="1080" height="1920" loading="lazy">
+              </button>
+            </figure>
+          </div>
+          <p class="work-gallery__drag" aria-hidden="true">← Drag to explore →</p>
+        </div>
+
+        <!-- Consulting -->
+        <div class="work-panel work-panel--consulting" role="tabpanel" id="work-consulting" aria-labelledby="work-tab-consulting" hidden>
+          <article class="work-case in-view">
+            <header class="work-case__head">
+              <span class="work-case__index">01</span>
+              <div>
+                <h3 class="work-case__title">Pricing &amp; Market Strategy</h3>
+                <p class="work-case__meta">Del Taco · Contract · Mar–May 2026 · Irvine, CA</p>
+              </div>
+            </header>
+            <p class="work-case__desc">
+              Built store-level growth initiatives anchored in sales data, with models pointing to an 18% projected lift in transaction volume. Pulled together 10+ demographic and geographic variables to explain demand across six locations, uncovered a 15% revenue gap in the 2–4 PM daypart by pairing POS trends with competitor promotions, and recommended five plays to strengthen Del Taco's catering presence on ezCater through rewards and reliability.
+            </p>
+            <ul class="work-case__tags">
+              <li>Pricing strategy</li>
+              <li>POS analytics</li>
+              <li>Market research</li>
+            </ul>
+          </article>
+          <article class="work-case in-view">
+            <header class="work-case__head">
+              <span class="work-case__index">02</span>
+              <div>
+                <h3 class="work-case__title">Go-To-Market Consulting</h3>
+                <p class="work-case__meta">Ditto AI · Contract · Mar–May 2026 · Irvine, CA</p>
+              </div>
+            </header>
+            <p class="work-case__desc">
+              Audited UCI student onboarding to map drop-offs in a three-step acquisition funnel. Analyzed 500+ students' behavior, preferences, and demographics to sharpen messaging and conversion, launched four on-campus growth initiatives (partnerships and digital campaigns) that raised sign-up conversion 20%, and benchmarked three competitors to inform two Q2 product priorities.
+            </p>
+            <ul class="work-case__tags">
+              <li>Go-to-market</li>
+              <li>Funnel optimization</li>
+              <li>Competitive analysis</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Finance -->
+        <div class="work-panel" role="tabpanel" id="work-finance" aria-labelledby="work-tab-finance" hidden>
+          <article class="work-internship in-view">
+            <div class="work-internship__badge">Internship</div>
+            <header class="work-internship__head">
+              <h3 class="work-internship__title">Search Fund Intern</h3>
+              <p class="work-internship__org">Matlack Holdings Co.</p>
+              <p class="work-internship__dates">May 2026–Present · Remote</p>
+            </header>
+            <p class="work-internship__summary">
+              Supporting development of a public search fund framework targeting $100–$250M in initial NYSE daily liquidity, with research and modeling that shapes fund structure and investor materials.
+            </p>
+            <ul class="work-internship__list">
+              <li>Researched public companies with search-fund roots to inform a proposed 75/25 public-to-private allocation</li>
+              <li>Modeled interest valuations with 3-year call-down, 5-year hold, and 25% IRR assumptions, discounting terminal values 10% annually</li>
+              <li>Prepared materials on economics: 1% management fee and tiered promote of 10–25% by return multiple</li>
+            </ul>
+          </article>
+          <article class="work-internship in-view">
+            <div class="work-internship__badge">Internship</div>
+            <header class="work-internship__head">
+              <h3 class="work-internship__title">Real Estate Private Equity Intern</h3>
+              <p class="work-internship__org">Project Destined</p>
+              <p class="work-internship__dates">May 2026–Present · Washington, DC</p>
+            </header>
+            <p class="work-internship__summary">
+              In a virtual program training 30,000+ students on commercial real estate, building analyst-level skills in underwriting, modeling, and industry exposure.
+            </p>
+            <ul class="work-internship__list">
+              <li>Built acquisition models under faculty guidance to project NOI, IRR, and equity multiples</li>
+              <li>Completed team case studies mirroring PE and capital markets deal underwriting</li>
+              <li>Attended sessions with top real estate PE firms and career opportunities in IB and asset management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="interests" id="interests" aria-labelledby="interests-heading">
+    <div class="interests__floats" aria-hidden="true">
+      <span>✦</span><span>◎</span><span>✦</span><span>◎</span><span>✦</span><span>◎</span>
+    </div>
+
+    <div class="interests__wrap">
+      <header class="interests__header in-view">
+        <p class="interests__eyebrow">03 · Interests</p>
+        <h2 class="interests__title" id="interests-heading">What keeps me curious.</h2>
+        <p class="interests__sub in-view">Click an orb, shuffle for a surprise, or just watch them float.</p>
+      </header>
+
+      <div class="interests__arena in-view" id="interests-arena">
+        <div class="interests__spotlight" id="interests-spotlight">
+          <div class="interests__spotlight-ring" aria-hidden="true"></div>
+          <div class="interests__spotlight-media">
+            <img class="interests__spotlight-img" id="interests-spotlight-img" src="assets/interests/coffee.png" alt="">
+          </div>
+          <div class="interests__spotlight-copy">
+            <p class="interests__spotlight-label" id="interests-spotlight-label">Pick an interest</p>
+            <h3 class="interests__spotlight-name" id="interests-spotlight-name">Your orbit awaits</h3>
+            <p class="interests__spotlight-desc" id="interests-spotlight-desc">Every orb is something I actually do, not a filler hobby list. Tap one to see the story.</p>
+          </div>
+        </div>
+
+        <div class="interests__orbit" id="interests-orbit" role="list" aria-label="Interests">
+          <button type="button" class="interest-orb" role="listitem" style="--i: 0" data-title="Coffee" data-desc="My go-to is an iced caramel macchiato, but I'm always up for trying something new on the menu." data-img="assets/interests/coffee.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/coffee.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Coffee</span>
+          </button>
+          <button type="button" class="interest-orb interest-orb--skiing" role="listitem" style="--i: 1" data-title="Skiing" data-desc="I've skied at China Peak and Big Bear, and dreaming of the Swiss Alps is very much on the list." data-img="assets/interests/skiing.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/skiing.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Skiing</span>
+          </button>
+          <button type="button" class="interest-orb" role="listitem" style="--i: 2" data-title="Reading" data-desc="I read across genres, but favorites include Where the Crawdads Sing and pretty much anything by Agatha Christie." data-img="assets/interests/reading.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/reading.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Reading</span>
+          </button>
+          <button type="button" class="interest-orb interest-orb--catan" role="listitem" style="--i: 3" data-title="Catan" data-desc="My family and I love Catan when we're home for the holidays, and we've even been playing virtually together when we're apart." data-img="assets/interests/catan.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/catan.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Catan</span>
+          </button>
+          <button type="button" class="interest-orb" role="listitem" style="--i: 4" data-title="Soccer" data-desc="Huge Manchester City fan, but my favorite player will always be Thomas Müller." data-img="assets/interests/soccer.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/soccer.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Soccer</span>
+          </button>
+          <button type="button" class="interest-orb interest-orb--tennis" role="listitem" style="--i: 5" data-title="Tennis" data-desc="My dad started coaching me at ten, and I've been playing ever since, and it's still my favorite way to compete and unwind." data-img="assets/interests/tennis.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/tennis.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Tennis</span>
+          </button>
+          <button type="button" class="interest-orb interest-orb--hiking" role="listitem" style="--i: 6" data-title="Hiking" data-desc="My dad and I have been adamant hikers since I was young, and we still love getting on the trail together whenever we can." data-img="assets/interests/hiking.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/hiking.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Hiking</span>
+          </button>
+          <button type="button" class="interest-orb interest-orb--broadway" role="listitem" style="--i: 7" data-title="Broadway" data-desc="My brother and I love Broadway. Top picks include Hamilton, Hadestown, and The Book of Mormon." data-img="assets/interests/broadway.png">
+            <span class="interest-orb__ring" aria-hidden="true"></span>
+            <img src="assets/interests/broadway.png" alt="" width="120" height="120">
+            <span class="interest-orb__name">Broadway</span>
+          </button>
+        </div>
+
+        <canvas class="interests__particles" id="interests-particles" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="interests__actions in-view">
+        <button type="button" class="interests__shuffle" id="interests-shuffle">Surprise me ✦</button>
+        <p class="interests__hint" id="interests-hint" aria-live="polite">8 orbs · hover to peek · click to spotlight</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="contact__wrap">
+      <header class="contact__header in-view">
+        <p class="contact__eyebrow">04 · Contact</p>
+        <h2 class="contact__title" id="contact-heading">Let’s connect.</h2>
+      </header>
+
+      <div class="contact__grid" role="list" aria-label="Contact methods">
+        <button
+          type="button"
+          class="contact-card in-view contact-card--email"
+          role="listitem"
+          data-copy="meganesinaga@gmail.com"
+          aria-label="Copy email address meganesinaga@gmail.com"
+        >
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-card__content">
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value contact-card__value--email">meganesinaga<wbr>@gmail.com</span>
+            <span class="contact-card__hint">Click to copy</span>
+          </span>
+        </button>
+
+        <a
+          class="contact-card in-view contact-card--linkedin"
+          role="listitem"
+          href="https://www.linkedin.com/in/megan-sinaga"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open LinkedIn profile"
+        >
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M7 10v8M7 7v.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M11 18v-5c0-1.5 1-2.5 2.5-2.5S16 11.5 16 13v5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 10v8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="contact-card__content">
+            <span class="contact-card__label">LinkedIn</span>
+            <span class="contact-card__value">megan-sinaga</span>
+            <span class="contact-card__hint">Opens in a new tab</span>
+          </span>
+        </a>
+
+        <a
+          class="contact-card in-view contact-card--resume"
+          role="listitem"
+          href="assets/resume.pdf"
+          download="Megan-Sinaga-Resume.pdf"
+          aria-label="Download resume PDF"
+        >
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H8a2 2 0 00-2 2v16a2 2 0 002 2h8a2 2 0 002-2V8l-4-6z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+              <path d="M14 2v6h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="contact-card__content">
+            <span class="contact-card__label">Resume</span>
+            <span class="contact-card__value">Download PDF</span>
+            <span class="contact-card__hint">Save to your device</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="contact__toast" id="contact-toast" role="status" aria-live="polite" hidden></div>
+    </div>
+  </section>
+
+  <div class="work-lightbox" id="work-lightbox" hidden aria-hidden="true">
+    <div class="work-lightbox__backdrop" data-close></div>
+    <button type="button" class="work-lightbox__close" id="work-lightbox-close" data-close aria-label="Close expanded image">&times;</button>
+    <div class="work-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="work-lightbox-caption">
+      <img class="work-lightbox__img" id="work-lightbox-img" src="" alt="">
+      <p class="work-lightbox__caption" id="work-lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
