@@ -1,0 +1,9 @@
+cd /Users/megansinaga/Projects/portfolio
+
+git add .
+git commit -m "Initial portfolio site"
+
+# Create a new repo on github.com (empty, no README), then:
+git remote add origin https://github.com/megansinaga/portfolio.git
+git branch -M main
+git push -u origin main
